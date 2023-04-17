@@ -1,0 +1,124 @@
+.sign_up .content{
+    max-width: 400px;
+    margin: 10px auto;
+    .log-on{
+        .logo{
+            text-align: center;
+            margin-bottom: 25px;
+            img{
+                width: 180px;
+            }
+            p{
+                font-weight: 500;
+                margin: 0;
+                padding: 0;
+            }
+            .log_fac{
+                margin: 15px auto;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                background-color: $primary-blue;
+                a{
+                    font-size: 14px;
+                    color: white;
+                    font-weight: 600;
+                }
+                img{
+                    width: 20px;
+                    margin-right: 5px;
+                }
+            }
+            .seperator{
+                margin:15px 0px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                text-align: center;
+                span.ou{
+                    text-align: center;
+                    color :$gray-color;
+                    font-weight: 600;
+                }
+                span.ligne{
+                    display: inline-block;
+                    width: 100px;
+                    height: 1px;
+                    background-color: $gray-color;
+                }
+            }
+        }
+        form{
+            div{
+                input{
+                    font-size: 12px;
+                    font-weight: 300;
+                    width: 100%;
+                    padding: 9px 0px 7px 8px;
+                    border-radius: 5px;
+                    border: 1px solid $separator-color;
+                    background-color: $input-bg;
+                }
+                margin-bottom: 5px;
+            }
+            button{
+                background-color: $primary-blue;
+                border: none;
+                color: white;
+                width: 100%;
+                padding: 7px 16px;
+                border-radius: 10px;
+                opacity: 0.7;
+                margin-top: 15px;
+                a{
+                    color: white;
+                }
+                &:hover{
+                    opacity: 1;
+                }
+            }
+        }
+
+    }
+    .info{
+        margin-top: 20px;
+        p{
+            text-align: center;
+            font-size: 12px;
+            color: $gray-color;
+            margin: 7px 0;
+            a{
+                font-size: 12px;
+            }
+        }
+    }
+    
+    .sing-in{
+        text-align: center;
+        padding: 10px 0px;
+        margin-top: 10px;
+        p{
+            font-weight: 300;
+            margin: 0;
+            color: $black ;
+            font-size: 14px;
+            a{
+                font-size: 14px;
+                color: $primary-blue;
+                font-weight: 600;
+            }
+        }
+    }
+    .download{
+        text-align: center;
+        div{
+            img{
+                height: 40px;
+            }
+        }
+    }
+}
