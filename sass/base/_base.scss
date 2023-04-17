@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif; 
+  overflow-x: hidden;
+  background-color: $body-bg;
+}
+
+
+.hide {
+  display: none;
+}
+.opac_0{
+  opacity: 0 !important;
+}
+.opac_1{
+  opacity: 1 !important;
+}
+.loved{
+  display: none;
+}
+.display{
+  display: flex !important;
+}
+.hide_img{
+  display: none !important;
+}

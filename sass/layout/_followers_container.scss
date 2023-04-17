@@ -1,0 +1,44 @@
+.followers_container{
+    // width: 280px;
+    font-size: 14px;
+    // margin-right: 5%;
+    // width: 319px;
+    @include medium-screen{
+        display: none;
+    }
+    div{
+        .suggestions{
+            .title{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 15px;
+                h4{
+                    color: $gray-color;
+                    font-size: 14px;
+                }
+                a.dark{
+                    font-size: 13px;
+                    font-weight: 500;
+                    color: $black;
+                }
+            }
+            .cart{
+                margin-bottom: 10px;
+                img{
+                    width: 45px;
+                    height: 45px;
+                }
+                .info{
+                    p{
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+        button, a{
+            color: $primary-blue;
+        }
+        
+    }
+    
+}

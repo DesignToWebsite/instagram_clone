@@ -1,0 +1,22 @@
+.dropdown{
+    button{
+        background-color: transparent !important;
+        border: none;
+        img.logo{
+            width: 103px;
+        }
+    }
+    .dropdown-menu{
+        width: fit-content;
+        .dropdown-item{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            img{
+                width: 24px;
+            }
+        }
+        
+    }
+}

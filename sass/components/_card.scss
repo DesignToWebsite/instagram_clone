@@ -1,0 +1,43 @@
+.cart{
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    div{
+        display: flex;
+        justify-content: center;
+        img{
+            margin: auto;
+            margin-right: 10px;
+            width: 56px;
+            border: 1px solid $gray-color;
+            border-radius: 30px;
+            padding: 1px;
+        }
+        .info{
+            display: flex;
+            flex-direction: column;
+            p{
+                line-height: 18px;
+                margin: 0;
+                font-size: 14px;
+                &.name{
+                    color: black;
+                    font-weight: 500;
+                }
+                &.second_name{
+                    color: $gray-color;
+                    font-weight: 400;
+                }
+
+            }
+        }
+        .switch{
+            a{
+                font-size: 16px;
+                color: rgb(0, 149, 246);
+            }
+        }
+    }
+}

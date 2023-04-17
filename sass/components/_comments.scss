@@ -1,0 +1,118 @@
+.modal-title{
+    font-size: 16px;
+}
+.comments{
+    .comment{
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        color: #262626;
+        
+        button{
+            font-size: 12px;
+            color:$gray-color;
+            background-color: transparent;
+            border: none;
+        }
+        .img{
+            margin-right: 10px;
+            img{
+                border-radius: 30px;
+                width: 32px;
+                height: 32px;
+            }
+        }
+        .content{
+            .person{
+                display: flex;
+                align-items: baseline;
+                h4{
+                    font-size: 14px;
+                    margin: 0;
+                }
+                span{
+                    margin-left: 10px;
+                    font-size: 14px;
+                    color: $gray-color;
+                }
+            }
+            p{
+                margin: 0;
+                font-size: 14px;
+            }
+            .replay{
+                display: flex;
+                align-items: baseline;
+                margin-bottom: 5px;
+                button{
+                    margin-right: 10px;
+                }
+            }
+            .answers{
+                button{
+                    display: flex;
+                    align-items: center;
+                    span{
+                        padding: 0 4px;
+                    }
+                    span.line{
+                        padding: 1px 20px;
+                        font-size: 1.5px;
+                        margin-right: 5px;
+                        background-color: $gray;
+                    }
+                }
+            }
+        }
+        .like{
+            display: flex;
+            flex-direction: column;
+            float: right;
+            align-items: center;
+            justify-content: end;
+            img{
+                width: 16px;
+                height: 16px;
+            }
+            p{
+                margin: 0;
+            }
+        }
+    }
+    .responses{
+        margin: 1em 0 1em 1em;
+    }
+}
+
+.modal-footer{
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: start;
+    form{
+        width: 100%;
+        border: 1px solid $gray-color;
+        border-radius: 30px;
+        padding: 5px;
+        .input{
+            display: flex;
+            img{
+                width: 30px;
+                border-radius: 50%;
+            }
+            input{
+                background-color: transparent;
+                border: none;
+                padding-left: 10px;
+                width: 100%;
+                outline: none;
+                box-shadow: none;
+            }
+        }
+    }
+}
+.emojionearea.emojionearea-inline {
+    border: none;
+    box-shadow: none;
+    background: transparent;
+}

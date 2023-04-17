@@ -1,0 +1,34 @@
+<!-- Type de base —->
+<xsd:complexType name="Base">
+<xsd:simpleContent>
+
+<xsd:extension base="xsd:string">
+<xsd:attribute name="format" type="xsd:string"/>
+
+</xsd:extension>
+
+</xsd:simpleContent>
+</xsd:complexType>
+<!-- Restriction du type de base -->
+
+<xsd:complexType name="Derived">
+<xsd:simpleContent>
+<xsd:restriction base="Base">
+
+!-- Nouveau type pour le contenu du type Derived —->
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="32"/>
+</xsd:restriction>
+</xsd:simpleType>
+</xsd:restriction>
+
+</xs
+</xsd:complexType>
+
+impleContent>
+
+<xsd:element name="base" type="Base"/>
+<xsd:element nam:
+
+"derived" type="Derived"/>

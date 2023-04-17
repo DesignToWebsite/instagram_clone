@@ -1,0 +1,169 @@
+.message_page{
+    background-color: $input-bg;
+}
+#message{
+    width: auto;
+    display: flex;
+    margin: 10px 10px;
+    justify-content: center;
+    .message_container{
+        background-color: white;
+        max-width: 935px;
+        max-height: 90vh;
+        display: flex;
+        border-radius: 5px;
+        border: 1px solid $gray;        
+        @include ex-small-screen{
+            height: auto;
+            display: block;
+            width: 100%;
+        }
+        .persons{
+            max-width: 300px;
+            height: 100%;
+            @include ex-small-screen{
+                max-width: 100%;
+            }
+            .account_name{
+                padding: 5px 20px;
+                padding: 0 10px;
+                display: flex;
+                align-items: center;
+                margin: auto;
+                position: relative;
+                height: 80px;
+                border: 1px solid $gray;
+                border-right: none;
+                @include small-screen{
+                    height: 60px;
+                }
+                p{
+                    font-weight: 500;
+                    font-size: 16px;
+                    &.search{
+                        position: absolute;
+                        right:  10px;
+                    }
+                }
+            }
+        }
+        .account_message{
+            height: 450px;
+            padding: 0px 15px;
+            border: 1px solid $gray;
+            border-top: none;
+            overflow-y: auto;
+            @include ex-small-screen{
+                height: auto;
+                padding-bottom: 2em;
+            }
+            .desc{
+                display: flex;
+                justify-content: space-between;
+                p{
+                    font-size: 16px;
+                    padding: 0;
+                }
+                a{
+                    font-size: 10px;
+                    color: $primary-blue;
+                }
+            }
+            .cart{
+                margin-right: 4.5em;
+                cursor: pointer;
+                @include small-screen{
+                    margin-right: 20px;
+                }
+                p{
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+                img{
+                    width: 35px;
+                    margin-right: 5px;
+                }
+            }
+        }
+        .message{
+            max-width: 500px;
+            @include ex-small-screen{
+                display: none;
+            }
+            .options{
+                border: 1px solid $gray;
+                padding: 0 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 80px;
+                @include small-screen{
+                    height: 60px;
+                }
+                .cart{
+                    margin: auto 0;
+                    margin-right: 11em;
+                    @include small-screen{
+                        margin: 0;
+                        margin-right: 25px;
+                    }
+                    img{
+                        width: 35px;
+                    }
+                }
+                .other{
+                    display: flex;
+                    img{
+                        width: 25px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+            .content{
+                position: relative;
+                padding: 0 20px;
+                height: 400px;
+                padding-bottom: 10px;
+                overflow-y: auto;
+                .p_message{
+                    width: 60%;
+                    width: fit-content;
+                    padding: 10px 20px;
+                    border-radius: 22px;
+                    border: 2px solid $gray;
+                }
+                .my_message{
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: end;
+                    text-align: right;
+                    p{
+                        background-color: $gray;
+                    }
+                }
+                
+            }
+            form{
+                height: 50px;
+                padding: 0 20px;
+                float: left;
+                width: 100%;
+                
+                input{
+                   
+                    padding: 5px 10px;
+                    margin: auto;
+                }
+                .emojionearea.emojionearea-inline{
+                    border-radius: 22px;
+                    border: 1px solid $gray-color;
+                }
+                input.search{
+                    border-radius: 22px;
+                    border: 1px solid $gray-color;
+                }
+            }
+        }
+    }
+}
+

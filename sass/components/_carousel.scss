@@ -1,0 +1,19 @@
+.owl-nav{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    @include small-screen{
+        width: 80%;
+    }
+    padding: 10px;
+    top: 10px;
+    span{
+        font-weight: 500;
+        padding:2px 10px;
+        border-radius: 100%;
+        display: none;
+        
+    }
+}
