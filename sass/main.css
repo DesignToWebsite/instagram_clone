@@ -403,6 +403,9 @@ button.follow_text {
   text-align: center;
   margin-bottom: 25px;
 }
+.login .content .log-on .logo img {
+  width: 180px;
+}
 .login .content .log-on form div {
   margin-bottom: 10px;
 }
@@ -1617,4 +1620,121 @@ button.follow_text {
     max-width: 200px;
     max-height: 200px;
   }
+}
+
+.sign_up .content {
+  max-width: 400px;
+  margin: 10px auto;
+}
+.sign_up .content .log-on .logo {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.sign_up .content .log-on .logo img {
+  width: 180px;
+}
+.sign_up .content .log-on .logo p {
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+.sign_up .content .log-on .logo .log_fac {
+  margin: 15px auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(0, 149, 246);
+}
+.sign_up .content .log-on .logo .log_fac a {
+  font-size: 14px;
+  color: white;
+  font-weight: 600;
+}
+.sign_up .content .log-on .logo .log_fac img {
+  width: 20px;
+  margin-right: 5px;
+}
+.sign_up .content .log-on .logo .seperator {
+  margin: 15px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  text-align: center;
+}
+.sign_up .content .log-on .logo .seperator span.ou {
+  text-align: center;
+  color: rgb(142, 142, 142);
+  font-weight: 600;
+}
+.sign_up .content .log-on .logo .seperator span.ligne {
+  display: inline-block;
+  width: 100px;
+  height: 1px;
+  background-color: rgb(142, 142, 142);
+}
+.sign_up .content .log-on form div {
+  margin-bottom: 5px;
+}
+.sign_up .content .log-on form div input {
+  font-size: 12px;
+  font-weight: 300;
+  width: 100%;
+  padding: 9px 0px 7px 8px;
+  border-radius: 5px;
+  border: 1px solid rgb(219, 219, 219);
+  background-color: rgb(250, 250, 250);
+}
+.sign_up .content .log-on form button {
+  background-color: rgb(0, 149, 246);
+  border: none;
+  color: white;
+  width: 100%;
+  padding: 7px 16px;
+  border-radius: 10px;
+  opacity: 0.7;
+  margin-top: 15px;
+}
+.sign_up .content .log-on form button a {
+  color: white;
+}
+.sign_up .content .log-on form button:hover {
+  opacity: 1;
+}
+.sign_up .content .info {
+  margin-top: 20px;
+}
+.sign_up .content .info p {
+  text-align: center;
+  font-size: 12px;
+  color: rgb(142, 142, 142);
+  margin: 7px 0;
+}
+.sign_up .content .info p a {
+  font-size: 12px;
+}
+.sign_up .content .sing-in {
+  text-align: center;
+  padding: 10px 0px;
+  margin-top: 10px;
+}
+.sign_up .content .sing-in p {
+  font-weight: 300;
+  margin: 0;
+  color: rgb(38, 38, 38);
+  font-size: 14px;
+}
+.sign_up .content .sing-in p a {
+  font-size: 14px;
+  color: rgb(0, 149, 246);
+  font-weight: 600;
+}
+.sign_up .content .download {
+  text-align: center;
+}
+.sign_up .content .download div img {
+  height: 40px;
 }/*# sourceMappingURL=main.css.map */
