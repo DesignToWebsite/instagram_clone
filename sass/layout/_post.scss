@@ -1,0 +1,101 @@
+.main_section{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    @include ex-small-screen{
+        justify-content: center;
+        width: 90vw;
+    }
+    .posts_container{
+        max-width: 470px;
+        @include ex-small-screen{
+            max-width: 100%;
+        }
+        .post{
+            font-size: 14px;
+            margin-bottom: 15px;
+            @include ex-small-screen{
+                width: 100%;
+            }
+            .info {
+                margin-bottom: 5px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                .person{
+                    img{
+                        width: 32px;
+                        height: 32px;
+                        border-radius: 30px;
+                        padding: 5px;
+                    }
+                    a{
+                        color: $black;
+                        font-weight: 600;
+                        margin-right: 5px;
+                    }
+                    span{
+                        color: $gray-color;
+                        list-style: circle;
+                        font-weight: 400;
+                        position: relative;
+                        top: -1px;
+                        &.circle{
+                            align-items: center;
+                            font-size: 30px;
+                        }
+                    }
+                }
+                .more{
+                    img{
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+            }
+            .image{
+                width: 100%;
+                img{
+                    width: 100%;
+                    border-radius: 5px;
+                }
+            }
+            .desc{
+                p{
+                    font-weight: 400;
+                    margin: 10px 0;
+                }
+                a{
+                    &.bold{
+                        font-weight: 600;
+                        color: $black;
+                    }
+                    &.gray{
+                        color: $gray-color;
+                        font-weight: 400;
+                    }
+                }
+                .icons{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    padding: 10px 0;
+                    div{
+                        img{
+                            cursor: pointer;
+                            width: 24px;
+                            height: 24px;
+                        }
+                    }
+                }
+                input{
+                    border: none;
+                    color: $gray-color;
+                }
+            }
+        }
+    }
+}

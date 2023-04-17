@@ -1,0 +1,21 @@
+.stories{
+    position: relative;
+    .items{
+        .item_s{
+            img{
+                width: 56px;
+                height: 56px;
+                border-radius: 30px;
+                padding: 1.2px;
+                border: 1px solid $gray-color;
+            }
+            p{
+                color: $gray-color;
+                font-weight: 300;
+                font-size: 12px;
+                margin: 0;
+                text-align: center;
+            }
+        }
+    }
+}

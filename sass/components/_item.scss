@@ -1,0 +1,40 @@
+.item{
+    position: relative;
+    .bg{
+        transition: all 1s ease;
+        &:hover{
+            opacity: 1 !important;
+        }
+        opacity: 0;
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        background-color: rgba(0, 0, 0,0.5);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        .info{
+            display: flex;
+            align-items: center;
+            span{
+                font-weight: 600;
+            }
+            .likes{
+                margin-right: 20px;
+            }
+        }
+        img{
+            width: 24px;
+            height: 24px;
+            margin-right: 5px;
+        }
+    }
+    img{
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+    }
+}

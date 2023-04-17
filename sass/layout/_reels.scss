@@ -1,0 +1,162 @@
+.reels{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .reel{
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        .video{
+            position: relative;
+            width: 360px;
+            height: 100%;
+            margin: 1em 0;
+            video{
+                position: relative;
+                width: 100%;
+                height: 100%;
+            }
+            .content{
+                position: absolute;
+                top: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 99%;
+                padding: 1em .5em;
+                img{
+                    width: 24px;
+                    background-color:rgba(0, 0, 0, 0.235);
+                    padding: 5px;
+                    border-radius: 30px;
+                }
+                .sound{
+                    display: flex;
+                    align-items: center;
+                    justify-content: end;
+                    margin-right: 10px;
+                    margin-top: 20px; 
+                    .volume-mute{
+                        display: none;
+                    }                
+                }
+                .play{
+                    opacity: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img{
+                        padding: 16px !important;
+                        width: 50px;
+                    }
+                }
+                .info{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: baseline;
+                    .profile{
+                        display: flex;
+                        align-items: baseline;
+                        h4{
+                            display: flex;
+                            align-items: baseline;
+                            a{
+                                color: $white;
+                                font-size: 14px;
+                                img{
+                                    background: transparent;
+                                    width: 32px;
+                                }
+                            }
+                        }
+                        span{
+                            color: white;
+                            padding:  0 10px ;
+                            font-size: 25px;
+                        }
+                        button{
+                            background-color: transparent;
+                            border: none;
+                            color: $white;
+                        }
+                    }
+                    .desc{
+                        padding: 10px 5px;
+                        p{
+                            font-weight: 300;
+                            font-size: 14px;
+                            padding: 0;
+                            margin:  0;
+                            color: white;
+                            margin-bottom: 5px;
+                        }
+                        .show_text{
+                            cursor: pointer;
+                        }
+                        .more{
+                            font-size: 14px;
+                            display: flex;
+                            align-items: baseline;
+                            color: white;
+                            .music{
+                                margin-right: 10px;
+                            }
+                            
+                            
+                        }
+                    }
+
+                }
+            }
+
+        }
+        .likes{
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            margin-left: 10px;
+            margin-bottom: 1em;
+            font-size: 12px;
+            @include small-screen{
+                margin-bottom: 3em;
+            }
+            @include ex-small-screen{
+                background-color: red;
+                margin: 0;
+                margin-bottom: 3em;
+
+            }
+            p{
+                margin: 0;
+            }
+            div{
+                &:hover{
+                    opacity: .7;
+                }
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 15px;
+                padding: 5px 0;
+                margin: 0;
+                cursor: pointer;
+                .loved{
+                    display: none;
+                }
+                &.send, &.save{
+                    padding-bottom: 18px;
+                }
+            }
+            img{
+                width: 22px;
+            }
+            .profile{
+                img{
+                    border-radius: 30px;
+                }
+            }
+        }
+    }
+}

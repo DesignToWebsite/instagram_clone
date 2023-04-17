@@ -1,0 +1,158 @@
+.profile_container{
+    padding: 60px 10px 0;
+    margin: auto;
+    @include small-screen{
+        max-width: 95%;
+        padding-top: 20px;
+    }
+    .profile_info{
+        .cart{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            @include ex-small-screen{
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .img{
+                margin-right: 2em;
+                img{
+                    width: 150px;
+                    border-radius: 50%;
+                    @include ex-small-screen{
+                        width: 100px;
+                    }
+                }
+            }
+        }
+        .info{
+            display: flex;
+            flex-direction:column;
+            @include ex-small-screen{
+                margin-top: 10px;
+            }
+            p{
+                font-weight: 400;
+                margin: 0;
+                &.name{
+                    display: flex;
+                    flex-wrap: wrap;
+                    font-size: 20px;
+                    @include ex-small-screen{
+                        justify-content: space-between;
+                    }
+                    button{
+                        padding: 5px 15px;
+                        font-size: 15px;
+                        margin-left: 20px;
+                        border-radius:10px ;
+                        border: none;
+                        font-weight: 500;
+                        background-color: $gray;
+                        
+                    }
+                }
+            }
+            .general_info{
+                display: flex;
+                justify-content: flex-start;
+                margin: 15px 0;
+                &:nth-child(2),&:nth-child(3){
+                    cursor: pointer;
+                }
+                @include ex-small-screen{
+                    margin: 5px 0;
+                }
+                p{
+                    margin-right: 15px;
+                    span{
+                        font-weight: 500;
+                    }
+                }
+            }
+            .nick_name{
+                font-weight: 500;
+            }
+            .desc{
+                font-weight: 18px;
+                font-weight: 400;
+            }
+        }
+    }
+    .highlights{
+        display: flex;
+        text-align: center;
+        .img{
+            width: 87px;
+            height: auto;
+            border: 1px solid $gray;
+            border-radius: 50%;
+            padding:2px;
+            @include ex-small-screen{
+                width: 60px;
+            }
+            img{
+                border-radius: 50%;
+                width: 100%;
+            }
+        }
+        .highlight{
+            cursor: pointer;
+            margin-right: 20px;
+            p{
+                margin: 10px auto;
+                font-weight: 500;
+            }
+        }
+    }
+    hr{
+        margin-bottom: 0;
+    }
+    .posts{
+        margin-bottom: 3em;
+        .nav-pills{
+            .nav-link{
+                color: $gray-color;
+                font-weight: 400;
+                padding: 5px 10px;
+                display: flex;
+                align-items: center;
+                font-weight: 500;
+                font-size: 12px;
+                img{
+                    margin-right: 5px;
+                    width: 15px;
+                }
+                &.active{
+                    background: none;
+                    border-top: 1px solid black;
+                    border-radius: 0px;
+                    color: black;
+                }
+            }
+        }    
+        .post{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            @include medium-screen{
+                gap: 5px;
+            }
+            .item{
+                // width: fit-content;
+                width: auto;
+                .item_img{
+                    max-width: 250px;
+                    max-height: 250px;
+                    @include small-screen{
+                        max-width: 200px;
+                        max-height: 200px;
+                    }
+                }
+            }
+        }    
+    }
+}
+
+
+

@@ -1,0 +1,32 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/extensions";
+
+@import "./base/base";
+@import "./base/typography";
+
+@import "./components/buttons";
+@import "./components/border";
+@import "./components/story";
+@import "./components/img";
+@import "./components/dropdown";
+@import "./components/carousel";
+@import "./components/card";
+@import "./components/model";
+@import "./components/comments";
+@import "./components/send_message";
+@import "./components/item";
+
+@import "./layout/login";
+@import "./layout/nav";
+@import "./layout/home";
+@import "./layout/post";
+@import "./layout/followers_container";
+@import "./layout/stories";
+@import "./layout/search_section";
+@import "./layout/explore";
+@import "./layout/reels";
+@import "./layout/notification_section";
+@import "./layout/messages";
+@import "./layout/create";
+@import "./layout/profile";

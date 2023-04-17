@@ -1,0 +1,200 @@
+
+.nav{
+    z-index: 200;
+    position: relative;
+    display: flex;
+    background-color: $body-bg;
+    @include small-screen{
+        display: none;
+    }
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+    min-height: 100vh;
+    position: fixed;
+    padding: 30px 24px 20px 24px;
+    border-right:1px solid $separator-color ;
+    .small-logo{
+        width: 24px;
+        margin-bottom: 25px;
+    }
+    .menu{
+        ul{
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            margin-bottom: 5em;
+            
+            li{
+                margin-bottom: 25px;
+                a{
+                    color: $black;
+                    font-size: 17px;
+                    display: flex;
+                    flex-direction: row;
+                    font-weight: 400;
+                    &.active{
+                        font-weight: 500;
+                    }
+                    img{
+                        margin-right: 10px;
+                        width: 24px;
+                        &.circle{
+                            border-radius: 30px;
+                        }
+                    }
+                    span{
+                        padding-right:15px ;
+                    }
+                }
+            }
+        }
+    }
+    .more{
+        img{
+            width: 24px;
+            margin-right: 10px;
+        }
+        .dropup{
+            button{
+                    display: flex;
+                    flex-direction: row;
+                    border: transparent;
+                    align-items: center;
+                    padding: 0;
+            }
+            ul{
+                li{
+                    a{
+                        border-bottom: 2px solid $separator-color;
+                        padding-bottom: 10px;
+                        font-family: 16px;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: space-between;
+                        &.bold_border{
+                            border-top: 4px solid $separator-color;
+                        }
+                        img{
+                            margin-left: 3em;
+                            width: 24px;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+
+}
+//general
+
+.left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    img{
+        width: 24px;
+    }
+    .notifications{
+        margin-left: 10px;
+    }
+}
+
+.nav_xm{
+    background-color: $body-bg;
+    display: none;
+    @include ex-small-screen{
+        display: flex;
+    }
+    flex-direction: row;
+    justify-content: space-between;
+    // @include
+    padding: 5px 15px;
+    .dropdown{
+        button{
+            padding-left: 0;
+        }
+        img{
+            margin: 0;
+        }
+    }
+    img{
+        margin-left: 20px;
+    }
+}
+
+.nav_sm .content{
+    background-color: $body-bg;
+    padding: 10px 40px 10px 0px;
+    display: none ;
+    @include small-screen{
+        display: flex;
+        width: 100vw;
+        margin: auto;
+    }
+    @include ex-small-screen{
+        display: none;
+    }
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .left{
+        .search_bar{
+            margin-right: 30px;
+            .input-group .form-outline{
+                width: 225px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                background-color: $input-bg;
+                padding: 5px 10px;
+                border-radius: 10px;
+                img{
+                    opacity: .5;
+                    width: 18px;
+                }
+                    
+                input{
+                    width: 225px;
+                    height: 30px;
+                    background-color: $input-bg;
+                    font-weight: 300;
+                    border: none;
+                }
+                
+            }  
+        }
+
+    }
+}
+
+.nav_bottom{
+    z-index: 10;
+    background-color: $body-bg;
+    display: none;
+    @include small-screen{
+        display: flex;
+    }
+    position: fixed;
+    bottom: 0;
+    flex-direction: row;
+    align-items: center ;
+    justify-content: space-around;
+    padding: 5px 40px;
+    width: 100%;
+    @include ex-small-screen{
+        justify-content: space-between;
+    }
+    
+    @include small-screen{
+        padding: 5px 15px;
+    }
+    img{
+        width: 24px;
+        &.circle{
+            border-radius: 30px;
+        }
+    }
+}

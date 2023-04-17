@@ -1,0 +1,28 @@
+.post_page{
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    // flex-direction: row;
+    // justify-content: flex-start;
+    @include small-screen{
+        // flex-direction: column;
+        grid-template-columns: 1fr;
+    }
+    .second_container{
+        margin-top: 35px;
+        margin-right: 3em;
+        
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        @include medium-screen{
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            margin: 35px 10px;
+        }
+    }
+    .icon_left img{
+        align-items: center;
+        margin-right: 10px;
+    }
+}

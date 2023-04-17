@@ -1,0 +1,24 @@
+.explore_container{
+    padding: 2em;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    width: fit-content;
+    margin: auto;
+    .items_4{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        .item{
+            max-width: 290px;
+            max-height: 290px;
+        }
+    }
+    .items_1{
+        .item{
+            max-width: 290px;
+            height: 100%;
+        }
+    }
+
+}

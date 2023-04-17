@@ -1,0 +1,79 @@
+#send_message_modal{
+    .send{
+        .search_person{
+            border-bottom: 1px solid #dee2e6;
+            display: flex;
+            width: 100%;
+            align-items: baseline;
+            p{
+                font-size: 18px;
+                margin-right: 10px;
+                font-weight: 400;
+            }
+            
+            input{
+                background-color: transparent;
+                border: none;
+                padding: 5px 10px;
+                width: 100%;
+            }
+        }
+        p{
+            font-weight: 500;
+            font-size: 15px;
+        }
+        .person{
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #262626;
+            .img{
+                margin-right: 10px;
+                img{
+                    border-radius: 30px;
+                    width: 44px;
+                    height: 44px;
+                }
+            }
+            .content{
+                .person{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: baseline;
+                    h4{
+                        font-size: 14px;
+                        margin: 0;
+                    }
+                    span{
+                        margin-left: 10px;
+                        font-size: 14px;
+                        color: $gray-color;
+                    }
+                }
+
+            }
+            .circle{
+                display: flex;
+                // background-color: #dee2e6;
+                flex-direction: column;
+                float: right;
+                align-items: center;
+                justify-content: end;
+                span{
+                    border:2px solid #262626;
+                    padding: 10px ;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+    }
+    .modal-footer{
+        button{
+            width: 100%;
+            opacity: .7;
+        }
+    }
+    
+}

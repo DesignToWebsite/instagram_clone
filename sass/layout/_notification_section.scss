@@ -1,0 +1,80 @@
+.notification_section{
+    transition: all 1s ease;
+    opacity: 0;
+    z-index: 2;
+    position: absolute;
+    background-color: $white;
+    padding: 10px;
+    width: 350px;
+    left:  -20em;
+    &.show{
+        transition: all 1s ease;
+        opacity: 1 !important;
+        left: 12.6em;
+    }
+    
+    height: 100vh;
+    padding: 1.5em 1em;
+    @include medium-screen{
+        &.show{
+           left: 5em; 
+        }
+        
+    }
+    @include small-screen{
+        display: none;
+    }
+    h2{
+        color: $black;
+        padding-bottom: 1em;
+        font-size: 25px;
+    }
+    .info{
+        span{
+            font-weight: 300;
+            font-size: 13px;
+            color: $black;
+            &.time{
+                color: $gray-color;
+                font-weight: 400;
+            }
+        }  
+    }
+    .notifications{
+        .notif{
+            // background-color: red;
+            .follow_you{
+               button{
+                border: none;
+                padding: 5px 10px;
+                background-color: $primary-blue ;
+                border-radius: 5px;
+                color: white;
+                font-weight:500;
+               }
+            }
+            .story_like{
+                // background-color: black;
+                padding: 0;
+                img{
+                    margin: auto;
+                    border-radius: 5px;
+                    height: 50px;
+                    border: none;
+
+                }
+            }
+        }
+    }
+}
+
+.notification_page{
+    #notification{
+        opacity: 1;
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+}
