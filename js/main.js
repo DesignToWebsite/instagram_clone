@@ -1,3 +1,371 @@
+
+/***************Post**************************/
+const posts = document.querySelector(".posts");
+const post_data = [
+  ['images/account1.jpg','zineb',45,'images/img1.jpg',150,'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima accusantium aperiam quod non minus cumque, recusandae hic soluta harum aut nulla... ',2],
+  ['images/account2.jpg','ikram',15,'images/img2.jpg',150,'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima accusantium aperiam quod non minus cumque, recusandae hic soluta harum aut nulla... ',2],
+  ['images/account3.jpg','amina',5,'images/img3.jpg',350,'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima accusantium aperiam quod non minus cumque, recusandae hic soluta harum aut nulla... ',2],
+  ['images/account4.jpg','amal',15,'images/img4.jpg',150,'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima accusantium aperiam quod non minus cumque, recusandae hic soluta harum aut nulla... ',2],
+  ['images/account6.jpg','amine',15,'images/img5.jpg',150,'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima accusantium aperiam quod non minus cumque, recusandae hic soluta harum aut nulla... ',2],
+]
+
+if(posts)
+  for (var i = 0; i < post_data.length; i++) {
+    const post_div = document.createElement('div')
+    post_div.classList.add("post");
+    post_div.innerHTML = `
+    <div class="info">
+      <div class="person">
+          <img src="${post_data[i][0]}">
+          <a href="#">${post_data[i][1]}</a>
+          <span class="circle">.</span>
+          <span>${post_data[i][2]}m</span>
+      </div>
+      <div class="more">
+          <img src="./images/show_more.png" alt="show more">
+      </div>
+    </div>
+    <div class="image">
+      <img src="${post_data[i][3]}" >
+    </div>
+    <div class="desc">
+      <div class="icons">
+          <div class="icon_left d-flex">
+              <div class="like">
+                  <img class="not_loved" src="./images/love.png" >
+                  <img class="loved" src="./images/heart.png" >
+              </div>
+              <div class="chat">
+                  <button type="button" class="btn p-0" data-bs-toggle="modal"
+                      data-bs-target="#message_modal">
+                      <img src="./images/bubble-chat.png" >
+                  </button>
+              </div>
+              <div class="send">
+                  <button type="button" class="btn p-0" data-bs-toggle="modal"
+                      data-bs-target="#send_message_modal">
+                      <img src="./images/send.png" >
+                  </button>
+              </div>
+          </div>
+          <div class="save not_saved">
+              <img class="hide saved" src="./images/save_black.png" >
+              <img class="not_saved" src="./images/save-instagram.png" >
+          </div>
+      </div>
+      <div class="liked">
+          <a class="bold" href="#">${post_data[i][4]} likes</a>
+      </div>
+      <div class="post_desc">
+          <p>
+              <a class="bold" href="#">${post_data[i][1]}</a>
+              ${post_data[i][5]}
+          </p>
+          <p><a class="gray" href="#">View all ${post_data[i][6]} comments</a></p>
+          <input type="text" placeholder="Add a comments...">
+      </div>
+    </div>
+      `;
+    posts.appendChild(post_div);
+  }
+
+/***************explore**********/
+const explore_date = [
+  ['images/img1.jpg',1500,400],
+  ['images/img2.jpg',400,200],
+  ['images/img3.jpg',700,20],
+  ['images/img4.jpg',150,80],
+  ['images/account3.jpg',10,5],
+  ['images/img6.jpg',100,57],
+  ['images/account7.jpg',100,57],
+  ['images/account8.jpg',100,57],
+  ['images/account9.jpg',100,57],
+  ['images/account10.jpg',100,57],
+  ['images/account11.jpg',100,57],
+  ['images/account12.jpg',100,57],
+  ['images/account13.jpg',100,57],
+  ['images/account14.jpg',100,57],
+  ['images/account1.jpg',100,57],
+]
+const explores = document.querySelector('.explore_container');
+
+if(explores)
+for (var i = 0; i < explore_date.length;i++) {
+  const explore_1_div = document.createElement('div')
+  explore_1_div.classList.add("items_4")
+  explore_1_div.innerHTML = `
+  <div class="item">
+      <img class="img-fluid" src="${explore_date[i][0]}" >
+      <div class="bg"
+        <div class="info">
+          <div class="likes">
+              <img src="./images/heart_white.png" >
+              <span>${explore_date[i][1]}</span>
+          </div>
+          <div class="comments">
+              <img src="./images/message.png" >
+              <span>${explore_date[i++][2]}</span>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="item">
+      <img class="img-fluid" src="${explore_date[i][0]}" >
+      <div class="bg"
+        <div class="info">
+          <div class="likes">
+              <img src="./images/heart_white.png" >
+              <span>${explore_date[i][1]}</span>
+          </div>
+          <div class="comments">
+              <img src="./images/message.png" >
+              <span>${explore_date[i++][2]}</span>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="item">
+      <img class="img-fluid" src="${explore_date[i][0]}" >
+      <div class="bg"
+        <div class="info">
+          <div class="likes">
+              <img src="./images/heart_white.png" >
+              <span>${explore_date[i][1]}</span>
+          </div>
+          <div class="comments">
+              <img src="./images/message.png" >
+              <span>${explore_date[i++][2]}</span>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="item">
+      <img class="img-fluid" src="${explore_date[i][0]}" >
+      <div class="bg"
+        <div class="info">
+          <div class="likes">
+              <img src="./images/heart_white.png" >
+              <span>${explore_date[i][1]}</span>
+          </div>
+          <div class="comments">
+              <img src="./images/message.png" >
+              <span>${explore_date[i++][2]}</span>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+  `;
+  explores.appendChild(explore_1_div);
+
+  const explore_2_div = document.createElement('div');
+  explore_2_div.classList.add("item1");
+  explore_2_div.innerHTML = `
+  <div class="item">
+  <img class="img-fluid" src="${explore_date[i][0]}" >
+  <div class="bg"
+    <div class="info">
+      <div class="likes">
+          <img src="./images/heart_white.png" >
+          <span>${explore_date[i][1]}</span>
+      </div>
+      <div class="comments">
+          <img src="./images/message.png" >
+          <span>${explore_date[i][2]}</span>
+      </div>
+    </div>
+  </div>
+</div>
+  `;
+  explores.appendChild(explore_2_div);
+}
+
+/*****************Reels********************/
+const reels_data = [
+  ['./video/video1.mp4',
+  './images/profile_img.jpg',
+  'zineb',
+  'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Officiis...',
+  'nameOfMusic',
+  'casablanca',
+  '55.9K',
+  '555',
+  ],
+  ['./video/video2.mp4',
+  './images/account1.jpg',
+  'ikram',
+  'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Officiis...',
+  'nameOfMusic',
+  'oujda',
+  '35.9K',
+  '75',
+  ],
+  ['./video/video3.mp4',
+  './images/account2.jpg',
+  'oumnia',
+  'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Officiis...',
+  'nameOfMusic',
+  'rabat',
+  '10.5K',
+  '155',
+  ],
+  ['./video/video4.mp4',
+  './images/account3.jpg',
+  'Safae',
+  'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Officiis...',
+  'nameOfMusic',
+  'Nador',
+  '705.9K',
+  '750',
+  ],
+
+
+]
+const reels_container = document.querySelector(".reels");
+
+if(reels_container)
+for(let i=0;i<reels_data.length;i++){
+    console.log(i)
+    const reel_div = document.createElement('div');
+    reel_div.classList.add("reel");
+    if(i==0){
+      reel_div.setAttribute("id",'video_play');
+      reel_div.innerHTML = `<div class="video">
+    <video src="${reels_data[i][0]}" autoplay loop>
+    </video>
+    <div class="content">
+        <div class="sound">
+            <img class="volume-up" src="./images/volume-up.png" >
+            <img class="volume-mute" src="./images/volume-mute.png" >
+        </div>
+        <div class="play">
+            <img src="./images/play-button-arrowhead.png" >
+        </div>
+        <div class="info">
+            <div class="profile">
+                <h4><a href="#">
+                        <img src="${reels_data[i][1]}" >
+                        ${reels_data[i][2]}
+                    </a></h4>
+                <span>.</span>
+                <button class="follow_text">Follow</button>
+            </div>
+            <div class="desc">
+                <p>${reels_data[i][3]} <span class="show_text">more</span>
+                </p>
+                <div class="more">
+                    <div class="music">
+                        <img src="./images/music.png" >
+                        <span>${reels_data[i][4]}</span>
+                    </div>
+                    <div class="position">
+                        <img src="./images/map.png" >
+                        <span>${reels_data[i][5]}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="likes">
+    <div class="like">
+        <img class="not_loved" src="./images/love.png" >
+        <img class="loved" src="./images/heart.png" >
+        <p> ${reels_data[i][6]}</p>
+    </div>
+    <div class="messsage">
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#message_modal">
+            <img src="./images/bubble-chat.png" >
+            <p class="m-0">${reels_data[i][7]}</p>
+        </button>
+    </div>
+    <div class="send">
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#send_message_modal">
+            <img src="./images/send.png" >
+        </button>
+    </div>
+    <div class="save not_saved">
+        <img class="hide saved" src="./images/save_black.png" >
+        <img class="not_saved" src="./images/save-instagram.png" >
+    </div>
+    <div class="more">
+        <img src="./images/show_more.png" >
+    </div>
+    <div class="profile">
+        <img src="${reels_data[i][1]}" >
+    </div>
+</div>`;
+    }else{
+        reel_div.innerHTML = `<div class="video">
+      <video src="${reels_data[i][0]}" loop>
+      </video>
+      <div class="content">
+          <div class="sound">
+              <img class="volume-up" src="./images/volume-up.png" >
+              <img class="volume-mute" src="./images/volume-mute.png" >
+          </div>
+          <div class="play">
+              <img src="./images/play-button-arrowhead.png" >
+          </div>
+          <div class="info">
+              <div class="profile">
+                  <h4><a href="#">
+                          <img src="${reels_data[i][1]}" >
+                          ${reels_data[i][2]}
+                      </a></h4>
+                  <span>.</span>
+                  <button class="follow_text">Follow</button>
+              </div>
+              <div class="desc">
+                  <p>${reels_data[i][3]} <span class="show_text">more</span>
+                  </p>
+                  <div class="more">
+                      <div class="music">
+                          <img src="./images/music.png" >
+                          <span>${reels_data[i][4]}</span>
+                      </div>
+                      <div class="position">
+                          <img src="./images/map.png" >
+                          <span>${reels_data[i][5]}</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="likes">
+      <div class="like">
+          <img class="not_loved" src="./images/love.png" >
+          <img class="loved" src="./images/heart.png" >
+          <p> ${reels_data[i][6]}</p>
+      </div>
+      <div class="messsage">
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#message_modal">
+              <img src="./images/bubble-chat.png" >
+              <p class="m-0">${reels_data[i][7]}</p>
+          </button>
+      </div>
+      <div class="send">
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#send_message_modal">
+              <img src="./images/send.png" >
+          </button>
+      </div>
+      <div class="save not_saved">
+          <img class="hide saved" src="./images/save_black.png" >
+          <img class="not_saved" src="./images/save-instagram.png" >
+      </div>
+      <div class="more">
+          <img src="./images/show_more.png" >
+      </div>
+      <div class="profile">
+          <img src="${reels_data[i][1]}" >
+      </div>
+  </div>`;
+    }
+    
+    reels_container.appendChild(reel_div);
+}
+
 /**************************video**************************/
 //play video onscroll
 const videos = document.querySelectorAll("video");
@@ -15,6 +383,7 @@ window.addEventListener("scroll", function() {
     }
   });
 });
+
 //play && pause && mute video
 let video_container = document.querySelectorAll(".video");
 video_container.forEach( function(item){
@@ -59,7 +428,6 @@ video_container.forEach( function(item){
   });
 });
 
-
 /**************************search+notif-section **************************/
 //search section notif
 let search = document.getElementById("search");
@@ -67,52 +435,24 @@ let search_icon = document.getElementById("search_icon");
 search_icon.addEventListener("click", function(){
   search.classList.toggle("show");
 });
+
 let notification = document.getElementById("notification");
-// let notification_icon = document.getElementById("notification_icon");
-// notification_icon.addEventListener('click',function(){
-//   notification.classList.toggle("show");
-// })
-console.log(notification)
 let notification_icon = document.querySelectorAll(".notification_icon");
-console.log(notification_icon)
 notification_icon.forEach( (notif)=>{
-  console.log(notif,1)
   notif.addEventListener('click',function(){
-    console.log("clo")
     notification.classList.toggle("show");
   })
 } 
 )
 
 
-//explore img-bg
-let images = document.querySelectorAll(".item");
-images.forEach(image =>{
-  const div = document.createElement("div");
-  div.classList.add("bg");
-  div.innerHTML = `
-                  <div class="info">
-                    <div class="likes">
-                        <img src="./images/heart_white.png" alt="">
-                        <span>1,527</span>
-                    </div>
-                    <div class="comments">
-                        <img src="./images/message.png" alt="">
-                        <span>1,057</span>
-                    </div>
-                  </div>`;
-  image.appendChild(div);
-});
-
-
 /**************************icons+text change **************************/
 //change the icon when the user click on it
+
 //love btn
 let love_icons = document.querySelectorAll(".like");
 love_icons.forEach(function(icon){
-
   icon.addEventListener("click",function(){
-    console.log("clicked")
       let not_loved = icon.children[0];
       let loved = icon.children[1];
       icon.classList.toggle("love");
@@ -120,6 +460,7 @@ love_icons.forEach(function(icon){
       loved.classList.toggle("display");
   })
 });
+
 //save btn
 let save_icon = document.querySelectorAll(".save");
 save_icon.forEach(function(save){
@@ -131,6 +472,7 @@ save_icon.forEach(function(save){
 
 })
 })
+
 //notification follow 
 let not_follow = document.querySelectorAll("#notification .notif.follow_notif")
 not_follow.forEach(item=>{
@@ -141,17 +483,18 @@ not_follow.forEach(item=>{
     if(follow.classList.contains("following")){
       follow.innerHTML= "Following";
       follow.style.backgroundColor = 'rgb(142, 142, 142)';
-      follow.style.color = "white";
+      follow.style.color = "black";
     }else{
       follow.innerHTML= "Follow";
       follow.style.backgroundColor = 'rgb(0, 149, 246)';
-      follow.style.color = "black";
+      follow.style.color = "white";
     }
     
   });
 })
 
 /**************************comments **************************/
+
 //comments
 let replay_com = document.querySelector(".comments .responses");
 let show_replay = document.querySelector(".comments .see_comment");
@@ -190,11 +533,14 @@ $(document).ready(function() {
   });
 });
 
-/**********Upload images && video*************/
+/**********Upload post*************/
 const form = document.getElementById('upload-form');
 const img_container = document.querySelector("#image-container");
+
 form.addEventListener('change', handleSubmit);
+
 let img_url;
+//add the image post
 function handleSubmit(event) {
     event.preventDefault();
     if(img_container.classList.contains('hide_img')){
@@ -211,13 +557,12 @@ function handleSubmit(event) {
         next_btn_post.innerHTML = 'Next';
         title_create.innerHTML = 'Crop';
     }
-    
 }
 
 /////button submit
 const next_btn_post = document.querySelector(".next_btn_post");
-
 next_btn_post.addEventListener('click',handleNext);
+//add a description + click btn to share post
 function handleNext(){
     if(image_description.classList.contains('hide_img')){
         const next_btn_post = document.querySelector(".next_btn_post");
@@ -238,12 +583,16 @@ function handleNext(){
     }
 }
 
+//post published
 function completed(){
   const share_btn_post = document.querySelector(".share_btn_post");
   const post_published = document.querySelector('.post_published');
+  const modal_dialog = document.querySelector("#create_modal .modal-dialog");
   share_btn_post.addEventListener("click", function(){
+    modal_dialog.classList.add("modal_complete");
       post_published.classList.remove("hide_img");
       share_btn_post.innerHTML = ""
   })
 }
+
 

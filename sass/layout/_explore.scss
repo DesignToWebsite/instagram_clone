@@ -8,16 +8,23 @@
     .items_4{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 10px;
+        gap: 5px;
         .item{
-            max-width: 290px;
-            max-height: 290px;
+            // max-width: 250px;
+            height: 250px;
+            @include small-screen{
+                max-height: 200px;
+            }
         }
     }
-    .items_1{
+    .item1{
+        height: 100%;
         .item{
             max-width: 290px;
             height: 100%;
+            img{
+                height: 100%;
+            }
         }
     }
 

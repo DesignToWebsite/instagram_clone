@@ -2,11 +2,12 @@
     position: relative;
     .items{
         .item_s{
+            
             img{
-                width: 56px;
                 height: 56px;
+                width: 55px;
                 border-radius: 30px;
-                padding: 1.2px;
+                padding: 2px;
                 border: 1px solid $gray-color;
             }
             p{

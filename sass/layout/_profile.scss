@@ -1,6 +1,10 @@
 .profile_container{
     padding: 60px 10px 0;
     margin: auto;
+    width: 700px;
+    @include medium-screen{
+        width: 650px;
+    }
     @include small-screen{
         max-width: 95%;
         padding-top: 20px;
@@ -108,7 +112,7 @@
     hr{
         margin-bottom: 0;
     }
-    .posts{
+    .posts_profile{
         margin-bottom: 3em;
         .nav-pills{
             .nav-link{

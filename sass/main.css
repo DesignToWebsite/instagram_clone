@@ -379,16 +379,16 @@ button.log_btn:hover {
   display: flex;
   align-items: center;
 }
-.item .bg .info span {
-  font-weight: 600;
+.item .bg span {
+  font-weight: 500;
 }
-.item .bg .info .likes {
-  margin-right: 20px;
+.item .bg .likes {
+  padding-right: 10px;
 }
 .item .bg img {
   width: 24px;
   height: 24px;
-  margin-right: 5px;
+  margin-right: 0px;
 }
 .item img {
   z-index: 1;
@@ -859,10 +859,10 @@ button.log_btn:hover {
   position: relative;
 }
 .stories .items .item_s img {
-  width: 56px;
   height: 56px;
+  width: 55px;
   border-radius: 30px;
-  padding: 1.2px;
+  padding: 2px;
   border: 1px solid rgb(142, 142, 142);
 }
 .stories .items .item_s p {
@@ -951,14 +951,24 @@ button.log_btn:hover {
 .explore_container .items_4 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  gap: 5px;
 }
 .explore_container .items_4 .item {
-  max-width: 290px;
-  max-height: 290px;
+  height: 250px;
 }
-.explore_container .items_1 .item {
+@media screen and (max-width: 768px) {
+  .explore_container .items_4 .item {
+    max-height: 200px;
+  }
+}
+.explore_container .item1 {
+  height: 100%;
+}
+.explore_container .item1 .item {
   max-width: 290px;
+  height: 100%;
+}
+.explore_container .item1 .item img {
   height: 100%;
 }
 
@@ -978,7 +988,7 @@ button.log_btn:hover {
   position: relative;
   width: 360px;
   height: 100%;
-  margin: 1em 0;
+  margin: auto 0;
 }
 .reels .reel .video video {
   position: relative;
@@ -1089,7 +1099,6 @@ button.log_btn:hover {
 }
 @media screen and (max-width: 498px) {
   .reels .reel .likes {
-    background-color: red;
     margin: 0;
     margin-bottom: 3em;
   }
@@ -1199,6 +1208,7 @@ button.log_btn:hover {
   display: flex;
   margin: 10px 10px;
   justify-content: center;
+  min-height: 100vh;
 }
 #message .message_container {
   background-color: white;
@@ -1376,6 +1386,9 @@ button.log_btn:hover {
 #create_modal .modal_share {
   max-width: 700px;
 }
+#create_modal .modal_complete {
+  max-width: 450px;
+}
 #create_modal .modal-body {
   overflow: hidden !important;
   height: 400px;
@@ -1458,6 +1471,12 @@ button.log_btn:hover {
 .profile_container {
   padding: 60px 10px 0;
   margin: auto;
+  width: 700px;
+}
+@media screen and (max-width: 991px) {
+  .profile_container {
+    width: 650px;
+  }
 }
 @media screen and (max-width: 768px) {
   .profile_container {
@@ -1577,10 +1596,10 @@ button.log_btn:hover {
 .profile_container hr {
   margin-bottom: 0;
 }
-.profile_container .posts {
+.profile_container .posts_profile {
   margin-bottom: 3em;
 }
-.profile_container .posts .nav-pills .nav-link {
+.profile_container .posts_profile .nav-pills .nav-link {
   color: rgb(142, 142, 142);
   font-weight: 400;
   padding: 5px 10px;
@@ -1589,35 +1608,35 @@ button.log_btn:hover {
   font-weight: 500;
   font-size: 12px;
 }
-.profile_container .posts .nav-pills .nav-link img {
+.profile_container .posts_profile .nav-pills .nav-link img {
   margin-right: 5px;
   width: 15px;
 }
-.profile_container .posts .nav-pills .nav-link.active {
+.profile_container .posts_profile .nav-pills .nav-link.active {
   background: none;
   border-top: 1px solid black;
   border-radius: 0px;
   color: black;
 }
-.profile_container .posts .post {
+.profile_container .posts_profile .post {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
 }
 @media screen and (max-width: 991px) {
-  .profile_container .posts .post {
+  .profile_container .posts_profile .post {
     gap: 5px;
   }
 }
-.profile_container .posts .post .item {
+.profile_container .posts_profile .post .item {
   width: auto;
 }
-.profile_container .posts .post .item .item_img {
+.profile_container .posts_profile .post .item .item_img {
   max-width: 250px;
   max-height: 250px;
 }
 @media screen and (max-width: 768px) {
-  .profile_container .posts .post .item .item_img {
+  .profile_container .posts_profile .post .item .item_img {
     max-width: 200px;
     max-height: 200px;
   }

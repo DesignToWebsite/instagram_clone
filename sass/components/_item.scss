@@ -19,17 +19,17 @@
         .info{
             display: flex;
             align-items: center;
-            span{
-                font-weight: 600;
-            }
-            .likes{
-                margin-right: 20px;
-            }
+        }
+        span{
+            font-weight: 500;
+        }
+        .likes{
+            padding-right: 10px;
         }
         img{
             width: 24px;
             height: 24px;
-            margin-right: 5px;
+            margin-right: 0px;
         }
     }
     img{
