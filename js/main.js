@@ -2,11 +2,11 @@
 /***************Post**************************/
 const posts = document.querySelector(".posts");
 const post_data = [
-  ['images/account1.jpg','zineb',45,'images/img1.jpg',150,'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima accusantium aperiam quod non minus cumque, recusandae hic soluta harum aut nulla... ',2],
-  ['images/account2.jpg','ikram',15,'images/img2.jpg',150,'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima accusantium aperiam quod non minus cumque, recusandae hic soluta harum aut nulla... ',2],
-  ['images/account3.jpg','amina',5,'images/img3.jpg',350,'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima accusantium aperiam quod non minus cumque, recusandae hic soluta harum aut nulla... ',2],
-  ['images/account4.jpg','amal',15,'images/img4.jpg',150,'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima accusantium aperiam quod non minus cumque, recusandae hic soluta harum aut nulla... ',2],
-  ['images/account6.jpg','amine',15,'images/img5.jpg',150,'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima accusantium aperiam quod non minus cumque, recusandae hic soluta harum aut nulla... ',2],
+  ['https://i.ibb.co/3S1hjKR/account1.jpg','zineb',45,'https://i.ibb.co/Jqh3rHv/img1.jpg',150,'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima accusantium aperiam quod non minus cumque, recusandae hic soluta harum aut nulla... ',2],
+  ['https://i.ibb.co/8x4Hqdw/account2.jpg','ikram',15,'https://i.ibb.co/2ZxBFVp/img2.jpg',150,'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima accusantium aperiam quod non minus cumque, recusandae hic soluta harum aut nulla... ',2],
+  ['https://i.ibb.co/CWbynB2/account3-1.jpg','amina',5,'https://i.ibb.co/5vQt677/img3.jpg',350,'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima accusantium aperiam quod non minus cumque, recusandae hic soluta harum aut nulla... ',2],
+  ['https://i.ibb.co/19R19st/account4.jpg','amal',15,'https://i.ibb.co/FVVxR6x/img.jpg',150,'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima accusantium aperiam quod non minus cumque, recusandae hic soluta harum aut nulla... ',2],
+  ['https://i.ibb.co/x68ZFKP/account6.jpg','amine',15,'https://i.ibb.co/r7xBR56/img5.jpg',150,'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima accusantium aperiam quod non minus cumque, recusandae hic soluta harum aut nulla... ',2],
 ]
 
 if(posts)
@@ -71,21 +71,21 @@ if(posts)
 
 /***************explore**********/
 const explore_date = [
-  ['images/img1.jpg',1500,400],
-  ['images/img2.jpg',400,200],
-  ['images/img3.jpg',700,20],
-  ['images/img4.jpg',150,80],
-  ['images/account3.jpg',10,5],
-  ['images/img6.jpg',100,57],
-  ['images/account7.jpg',100,57],
-  ['images/account8.jpg',100,57],
-  ['images/account9.jpg',100,57],
-  ['images/account10.jpg',100,57],
-  ['images/account11.jpg',100,57],
-  ['images/account12.jpg',100,57],
-  ['images/account13.jpg',100,57],
-  ['images/account14.jpg',100,57],
-  ['images/account1.jpg',100,57],
+  ['https://i.ibb.co/Jqh3rHv/img1.jpg',1500,400],
+  ['https://i.ibb.co/2ZxBFVp/img2.jpg',400,200],
+  ['https://i.ibb.co/5vQt677/img3.jpg',700,20],
+  ['https://i.ibb.co/FVVxR6x/img.jpg',150,80],
+  ['https://i.ibb.co/CWbynB2/account3-1.jpg',10,5],
+  ['https://i.ibb.co/z41bG1y/img6.jpg',100,57],
+  ['https://i.ibb.co/vkXPdxN/account7.jpg',100,57],
+  ['https://i.ibb.co/7R0Vzp3/account8.jpg',100,57],
+  ['https://i.ibb.co/gvrfhjL/account9.jpg',100,57],
+  ['https://i.ibb.co/j8L7FPY/account10.jpg',100,57],
+  ['https://i.ibb.co/JcXRPht/account11.jpg',100,57],
+  ['https://i.ibb.co/6WvdZS9/account12.jpg',100,57],
+  ['https://i.ibb.co/pJ8thst/account13.jpg',100,57],
+  ['https://i.ibb.co/4M3W996/account14.jpg',100,57],
+  ['https://i.ibb.co/3S1hjKR/account1.jpg',100,57],
 ]
 const explores = document.querySelector('.explore_container');
 
@@ -192,7 +192,7 @@ const reels_data = [
   '555',
   ],
   ['./video/video2.mp4',
-  './images/account1.jpg',
+  './https://i.ibb.co/3S1hjKR/account1.jpg',
   'ikram',
   'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Officiis...',
   'nameOfMusic',
@@ -201,7 +201,7 @@ const reels_data = [
   '75',
   ],
   ['./video/video3.mp4',
-  './images/account2.jpg',
+  './https://i.ibb.co/8x4Hqdw/account2.jpg',
   'oumnia',
   'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Officiis...',
   'nameOfMusic',
@@ -210,7 +210,7 @@ const reels_data = [
   '155',
   ],
   ['./video/video4.mp4',
-  './images/account3.jpg',
+  './https://i.ibb.co/CWbynB2/account3-1.jpg',
   'Safae',
   'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Officiis...',
   'nameOfMusic',
