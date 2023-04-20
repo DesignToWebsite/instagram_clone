@@ -990,6 +990,12 @@ button.log_btn:hover {
   height: 100%;
   margin: auto 0;
 }
+@media screen and (max-width: 498px) {
+  .reels .reel .video {
+    width: auto;
+    height: 90vh;
+  }
+}
 .reels .reel .video video {
   position: relative;
   width: 100%;
@@ -1101,6 +1107,9 @@ button.log_btn:hover {
   .reels .reel .likes {
     margin: 0;
     margin-bottom: 3em;
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
 }
 .reels .reel .likes p {
