@@ -55,6 +55,10 @@ p {
   font-weight: 400;
 }
 
+img {
+  object-fit: cover;
+}
+
 .dropup .dropdown-toggle::after {
   display: none;
 }
